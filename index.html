@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Шестая лаба</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<form method="post" action="buttons.php">
+		<div class="center">
+			<div>
+				<label>ID:</label>
+				<input type="number" name="book[id]"><br>
+			</div>
+
+			<div>
+				<label>Автор:</label>
+				<input type="text" name="book[author]"><br>
+			</div>
+
+			<div>
+				<label>Название книги:</label>
+				<input type="text" name="book[bookname]"><br>
+			</div>
+
+			<div>
+				<label>Аннотация:</label>
+				<input type="text" name="book[abstractname]"><br>
+			</div>
+
+			<div>
+				<label>ISBN:</label>
+				<input type="text" name="book[isbn]"><br>
+			</div>
+
+			<div>
+				<label>Отзыв:</label>
+				<input type="text" name="book[review]"><br>
+			</div>
+		</div>
+		<input type="submit" name="save_button"value="Сохранить">
+		<input type="submit" name="view_button" value="Просмотреть">
+		<input type="submit" name="edit_button" value="Отредактировать(по ID)">
+		<input type="submit" name="del_button" value="Очистить БД">
+	</form>
+</body>
+</html>
